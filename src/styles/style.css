@@ -1,0 +1,210 @@
+:root {
+    --tonBlue: #0088CC;
+    --tonbluLight:rgba(0, 136, 204 ,0.1);
+    --tonBlack: #303757;
+    --textcolor: #303757;
+    --textgray: rgb(155, 155, 155);
+    --hoverBack: rgba(51,51,51,0.06);
+    --shadow: rgba(73,71,124,0.24);
+    --border: rgb(48 55 87 / 16%);
+    --dangerBack:#f8d7da;
+    --dangerBorder:#f5c2c7;
+    --dangerText:#842029;
+
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--tonBlack); 
+  }
+  input:focus-visible{
+    outline: 0px;
+  }
+@font-face {
+    font-family: 'mulish-black';
+    src: url('../fonts/Mulish-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'mulish-extrabold';
+    src: url('../fonts/Mulish-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'mulish-bold';
+    src: url('../fonts/Mulish-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'mulish';
+    src: url('../fonts/Mulish-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Material Icons Extended";
+    src: url(../fonts/materialicon.woff2) format('woff2');
+  }
+  a{
+    text-decoration: none;
+  }
+  .btn:focus{
+    box-shadow: none !important;
+    
+  }
+  .btn-outline-primary:hover {
+    background-color: var(--tonBlue) !important;
+  }
+  .text_color{
+    color: var(--tonBlack) !important;
+  }
+  .text_color b{
+    color: var(--tonBlue) !important;
+  }
+  a {
+    cursor: pointer;
+  }
+
+  /* -----------navbar styles----------- */
+.nav-img {
+    max-height: 36px;
+}
+ body{
+     font-family: 'mulish-extrabold';
+     max-width: 1000px;
+     margin: auto;
+     color: var(--textInlight);
+ }
+ #offcanvasNavbar .nav-link-custom {
+     color: var(--tonBlue) ;
+     font-family: 'mulish-bold';
+     font-size: 1.2rem;
+
+ }
+
+ #offcanvasNavbar .nav-link-custom:hover {
+     color: var(--tonBlack) ;
+ }
+
+ /* #offcanvasNavbar .active{
+
+} */
+ #nav-btn{
+  border: none;
+  padding: 0.3rem;
+}
+ #nav-btn:hover{
+  border-radius: 100%;
+  background-color:var(--hoverBack);
+}
+ #nav-btn:focus{
+  box-shadow: none ;
+}
+.offcanvas-backdrop.show{
+  opacity: 0 !important;
+}
+#offcanvasNavbar{
+  border: none ;
+  box-shadow: 0px 16px 32px var(--shadow)
+}
+@media (min-width: 992px){
+.navbar-expand-lg .offcanvas {
+  box-shadow: none !important;
+}}
+#offcanvasNavbarLabel ~ .btn-close{
+  box-shadow: none;
+}
+
+#offcanvasNavbarLabel ~ .btn-close:hover{
+  border-radius: 100%;
+  background-color:var(--hoverBack);
+}
+
+.nav-btns{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "mulish-black";
+    font-size: 1rem;
+  
+}
+
+.nav-btns .btn {
+  border-radius:100px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 170px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.nav-btns .btn.btn-primary{
+  background-color: var(--tonBlue);
+}
+.nav-btns .btn.btn-outline{
+  border-color: var(--tonBlue);
+  color: var(--tonBlue);
+}
+.nav-btns .btn img{
+  padding-right: 0.5rem;
+}
+
+
+
+  /* -----------footer styles----------- */
+  .nav-list{
+    padding-top: 4rem;
+  }
+  .nav-item{
+    display: flex;
+    flex-flow: column;
+  }
+  .nav-item__list{
+    list-style: none;
+    padding: 0;
+    font-family: 'mulish';
+    font-size: 1rem;
+    color: var(--tonBlue);
+  }
+  .nav-item__list li{
+    margin-top: 1rem;
+  }
+  .nav-item__btn{
+    font-family: 'mulish-black';
+    font-size: 1rem;
+    color: var(--textcolor);
+    cursor: pointer;
+  }
+  .scroll-top {
+    color: var(--tonBlue);
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    direction:rtl;
+}
+.scroll-top:hover{
+  color:var(--textcolor);
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    
+}
+
+
+
+
+  
