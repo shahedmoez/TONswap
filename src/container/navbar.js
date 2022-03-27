@@ -49,7 +49,7 @@ export default function Navbar() {
                       <img src={telegram} alt="" />
                       <span> Channel </span>
                     </a>
-                    <a href="https://github.com/newton-blockchain" target="_blank" className="btn btn-outline">
+                    <a href="https://github.com/newton-blockchain" target="" className="btn btn-outline">
                       <img src={githubblue} alt="" />
                       <span> Github </span>
                     </a>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addColection, selectColectionList, loadList, addList, selectLoadColection, selectError, selectLoadList } from "../exchangeSlice";
-import Loading from "./loading/Loading";
+import { addColection, selectColectionList, loadList, addList, selectLoadColection, selectError } from "../exchangeSlice";
 import diamond from '../../../imges/diamond.gif';
 
 export default function AddColectionList() {
@@ -12,7 +11,6 @@ export default function AddColectionList() {
   const colectionList = useSelector(selectColectionList);
   const Error = useSelector(selectError);
   const LoadColection = useSelector(selectLoadColection);
-  const isLoadingList = useSelector(selectLoadList);
 
 
   //for past btn
@@ -38,7 +36,7 @@ export default function AddColectionList() {
         <button className="icon search_btn" onClick={() => checkAddcolection(urlColection)}>search</button>
         <span className="icon paste_btn" onClick={() => pasteClip("search_colection")}>content_paste</span>
       </div>
-      {isLoadingList === "loading" ? <div className="d-flex justify-content-center mt-3"><span style={{ "color": 'var(--tonBlue)' }}>List is Loading</span><img alt="" className='diamond_middle' src={diamond} /></div> : <></>}
+      {LoadColection === "loading" ? <div className="d-flex justify-content-center mt-3"><span style={{ "color": 'var(--tonBlue)' }}>List is Loading</span><img alt="" className='diamond_middle' src={diamond} /></div> : <></>}
       {isloaded === -2 ? <></>
         : isloaded >= 0 ?
           <ul className=" modal-body modal_body">
@@ -78,7 +76,7 @@ export default function AddColectionList() {
                   </li>
                 </ul>
                 : LoadColection === "rejected" ? <span className="alert_persent">{Error}</span>
-                  : LoadColection === "loading" ? <div className='d-flex'><p className='px-3 m-0'>Loading List...</p><Loading color="var(--tonBlue)" size="20px" top="-4px" left="-5px"></Loading></div> : <></>
+                  : <></>
               }
             </>
             : <></>

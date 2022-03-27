@@ -37,7 +37,7 @@ export default function Exchange() {
   }
   useEffect(() => { 
     if (!(inAmount === "") || !(outAmount === "")) { sendInfoForPrice() } 
-  }, [InToken, OutToken])
+  }, [InToken, OutToken ])
 
   // for reverce order and position
   const toggleClass = (clas, id) => {
@@ -86,7 +86,7 @@ export default function Exchange() {
             {price.priceLoad === "loading" ? <div className='d-flex'><p className='px-3 m-0'>Fetching Price...</p><Loading color="var(--tonBlue)" size="20px" top="-4px" right="19px"></Loading></div>
               : price.priceLoad === "idle" ? <p className='px-3 m-0'>$ {price.priceInToken}</p> : <p className='pb-4 m-0'></p>}
             <div className="swap_cheang" onClick={() => { toggleClass("ReversOrder", "order"); reversWithTimeOut() }}>
-              {price.priceLoad === "loading" ? <img className='diamond_middle' src={diamond} />
+              {price.priceLoad === "loading" ? <img className='diamond_middle' src={diamond} alt="" />
                 : <span className="icon ">keyboard_double_arrow_down</span>
               }
             </div>
@@ -106,7 +106,7 @@ export default function Exchange() {
               : price.priceLoad === "idle" ? <>
                     <p className='px-3 m-0'>$ {price.priceOutToken}</p>
                     <div style={{ "padding": "0 0.8rem" }}>
-                    {(price.priceInToken*inAmount<price.fee)&&(position==="sell")&&!(inAmount==0) ? <p className='text-danger text-center'>Amount is small than transaction Fee !</p>
+                    {(price.priceInToken*inAmount<price.fee)&&(position==="sell")&&!(inAmount==="")&&!(inAmount===0) ? <p className='text-danger text-center'>Amount is small than transaction Fee !</p>
                     :<div className='exchange_price_info'>
                         <div className='d-flex w-100 justify-content-between'>
                           <p className='m-0 px-1'>1 {OutToken.symbol} = {price.priceOutToIn} {InToken.symbol}</p>

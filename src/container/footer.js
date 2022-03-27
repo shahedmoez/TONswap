@@ -24,11 +24,11 @@ export default function Footer() {
                             <img src={telegram} alt="" />
                             <span> Channel </span>
                         </a>
-                        <a href="https://github.com/newton-blockchain" target="_blank" className="btn btn-outline ms-sm-4">
+                        <a href="https://github.com/newton-blockchain" target="" className="btn btn-outline ms-sm-4">
                             <img src={githubblue} alt="" />
                             <span> Github </span>
                         </a>
-                        <a href="mailto:press@ton.org" target="_blank" className="btn btn-outline ms-sm-4">
+                        <a href="mailto:press@ton.org" target="" className="btn btn-outline ms-sm-4">
                             <img src={emailIcon} className="email-icon" alt="" />
                             <span> Press </span>
                         </a>
@@ -43,10 +43,10 @@ export default function Footer() {
                                 <li> <a href="/whitepaper.pdf"> Whitepaper </a> </li>
                                 <li> <a href="/wallets"> Wallets </a> </li>
                                 <li> <a href="/services/"> Services </a> </li>
-                                <li> <a href="https://tonscan.org/" target="_blank"> Explorer </a> </li>
+                                <li> <a href="https://tonscan.org/" target=""> Explorer </a> </li>
                                 <li> <a href="/bridge/"> Bridge </a> </li>
                                 <li> <a href="/brand-assets"> Brand Assets </a> </li>
-                                <li> <a href="https://ton.org/vacancies/" target="_blank"> Vacancies </a> </li>
+                                <li> <a href="https://ton.org/vacancies/" target=""> Vacancies </a> </li>
                             </ul>
                         </div>
                         <div className="nav-item">
@@ -58,11 +58,11 @@ export default function Footer() {
                         <div className="nav-item">
                             <div className="nav-item__btn"> Developers </div>
                             <ul className="nav-item__list">
-                                <li> <a href="https://github.com/newton-blockchain" target="_blank"> GitHub </a> </li>
+                                <li> <a href="https://github.com/newton-blockchain" target=""> GitHub </a> </li>
                                 <li> <a href="/docs"> Docs </a> </li>
-                                <li> <a href="https://toncenter.com" target="_blank"> API </a> </li>
-                                <li> <a href="https://t.me/testgiver_ton_bot" target="_blank"> Testnet Faucet </a> </li>
-                                <li> <a href="https://testnet.tonscan.org/" target="_blank"> Testnet Explorer </a> </li>
+                                <li> <a href="https://toncenter.com" target=""> API </a> </li>
+                                <li> <a href="https://t.me/testgiver_ton_bot" target=""> Testnet Faucet </a> </li>
+                                <li> <a href="https://testnet.tonscan.org/" target=""> Testnet Explorer </a> </li>
                                 <li> <a href="/bridge?testnet=true"> Testnet Bridge </a> </li>
                             </ul>
                         </div>
@@ -84,7 +84,7 @@ export default function Footer() {
                             <div className="nav-item__btn"> Validators </div>
                             <ul className="nav-item__list">
                                 <li> <a href="/validator"> Become validator </a> </li>
-                                <li> <a href="https://tonmon.xyz/" target="_blank"> Network Monitor </a> </li>
+                                <li> <a href="https://tonmon.xyz/" target=""> Network Monitor </a> </li>
                             </ul>
                         </div>
                     </div>
