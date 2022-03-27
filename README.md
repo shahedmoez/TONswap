@@ -50,7 +50,7 @@ After set input and out pout tokens and amounts Bottom of page show 	information
 **Connect To wallet:**
 *	List of available connecting app imported from constants. by clicking on each one set state connect wallet.
 
-**Tech Stack**
+## **Tech Stack**
 
 -`React` 
 
@@ -60,9 +60,10 @@ After set input and out pout tokens and amounts Bottom of page show 	information
 
 -`Bootstrap` CSS
 
-**Installing** 
-*	npm Install
-
+## **Installing** 
+```bash
+npm Install
+```
  . It was created for the purposes of the competition posted here: ton-blockchain/TIPs#42
 
 
