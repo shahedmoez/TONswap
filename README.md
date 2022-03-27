@@ -54,7 +54,7 @@ After set input and out pout tokens and amounts Bottom of page show 	information
 
 -`React` 
 
--`Redux` (redux toolkit final version of redux)
+-`Redux` (redux toolkit)
 
 -`Node.js`
 
